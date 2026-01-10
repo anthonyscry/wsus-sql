@@ -3,11 +3,23 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "tsx index.ts"
+    "start": "tsx index.ts",
+    "auto": "tsx run.ts",
+    "test": "tsx run.ts --test",
+    "maps": "tsx run.ts --maps",
+    "stagehand": "tsx run.ts --stagehand",
+    "custom": "tsx run.ts --custom",
+    "hook": "tsx run.ts --hook",
+    "hook:bg": "tsx run.ts --hook &",
+    "notify-test": "tsx run.ts --notify-test",
+    "workflow": "tsx automation-workflow.ts"
   },
   "dependencies": {
     "@browserbasehq/stagehand": "latest",
-    "dotenv": "^16.4.7"
+    "@playwright/test": "^1.57.0",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.57.0",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
     "tsx": "^4.19.2",
