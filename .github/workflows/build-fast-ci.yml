@@ -124,7 +124,7 @@ jobs:
           Remove-Item -Path $packageDir -Recurse -Force
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: WsusManager-${{ steps.version.outputs.VERSION }}
           path: ./dist/
